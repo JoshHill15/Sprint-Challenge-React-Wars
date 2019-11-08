@@ -13,10 +13,10 @@ import {
 function TheCards({ name, eye, mass, gender, birthyear }) {
   return (
     <div>
-      <Row sm = "6">
+      <Row>
         <Col sm="12">
           <Card className = "card">
-            <CardHeader className = "card-header-footer">My name is: {name}!</CardHeader>
+            <CardHeader className = "card-header-footer"><h1>My Name is: {name}!</h1></CardHeader>
             <CardBody>
               <CardTitle>My weight is: {mass} Kg</CardTitle>
               <CardText>My gender is: {gender}</CardText>

@@ -8,17 +8,16 @@ function CardList () {
     useEffect(() => {
         axios.get(`https://swapi.co/api/people/`)
         .then(response => {
-            // console.log(response.data)
+            console.log(response)
             setData(response.data.results)
         })
         .catch(err => console.log("Data not being transferred", err))
 
     }, [])
     
-    console.log(data)
+    // console.log(data)
     return (
         <div>
-            {/* <Two name = {data.name}/> */}
             {data.map((cv, index) => {
                 return <TheCards 
                 key = {index} 
